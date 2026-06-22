@@ -15,6 +15,7 @@ class SmartClimateProxyBaseEntity(Entity):
 
     def __init__(self, manager, key: str, name: str | None = None) -> None:
         super().__init__()
+
         self.manager = manager
         self._key = key
         self._attr_name = name
@@ -25,6 +26,7 @@ class SmartClimateProxyBaseEntity(Entity):
             "manufacturer": "Smart Climate Proxy",
             "model": "Generic Climate Proxy",
         }
+
         manager.entities.append(self)
 
     @property
