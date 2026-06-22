@@ -1,0 +1,16 @@
+{
+  "domain": "smart_climate_proxy",
+  "name": "Smart Climate Proxy",
+  "codeowners": [
+    "@Timmppp"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "climate",
+    "sensor"
+  ],
+  "documentation": "https://github.com/Timmppp/smart-climate-proxy",
+  "issue_tracker": "https://github.com/Timmppp/smart-climate-proxy/issues",
+  "iot_class": "local_push",
+  "version": "0.2.1"
+}

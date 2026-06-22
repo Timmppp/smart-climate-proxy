@@ -1,0 +1,11 @@
+reset_learning:
+  name: Reset learning
+  description: Reset learned heat/cool setpoint tables for one proxy or all proxies.
+  fields:
+    entry_id:
+      name: Entry ID
+      description: Optional config entry ID. If omitted, all proxy learning tables are reset.
+      required: false
+      example: "01KTQPN69Q9BGK2BQ2D9BGKQZ9"
+      selector:
+        text:

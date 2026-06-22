@@ -1,0 +1,43 @@
+{
+  "title": "Smart Climate Proxy",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Create climate proxy",
+        "description": "Create a virtual climate using an external temperature sensor.",
+        "data": {
+          "name": "Name",
+          "target_climate": "Underlying climate",
+          "temperature_sensor": "External temperature sensor",
+          "target_temperature": "Initial target temperature",
+          "lower_tolerance": "Lower tolerance",
+          "upper_tolerance": "Upper tolerance",
+          "correction_interval_minutes": "Correction interval in minutes",
+          "setpoint_step": "Setpoint step",
+          "learning_stable_hours": "Stable hours before learning",
+          "apply_to_device": "Control underlying device",
+          "learning_enabled": "Learning enabled",
+          "manual_override_enabled": "Manual override detection enabled"
+        }
+      },
+      "advanced": {
+        "title": "Advanced options",
+        "data": {
+          "manual_override_minutes": "Manual override timeout in minutes",
+          "learning_resolution": "Learning bucket resolution",
+          "forward_hvac_mode": "Forward HVAC mode",
+          "forward_fan_mode": "Forward fan mode",
+          "forward_swing_mode": "Forward swing mode",
+          "forward_preset_mode": "Forward preset mode",
+          "use_quiet_switch": "Use quiet mode switch",
+          "quiet_switch": "Quiet mode switch",
+          "use_custom_limits": "Use custom setpoint limits",
+          "heat_min_setpoint": "Heat minimum setpoint",
+          "heat_max_setpoint": "Heat maximum setpoint",
+          "cool_min_setpoint": "Cool minimum setpoint",
+          "cool_max_setpoint": "Cool maximum setpoint"
+        }
+      }
+    }
+  }
+}
