@@ -1,0 +1,97 @@
+{
+  "title": "Slimme klimaatproxy",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Klimaatproxy aanmaken",
+        "description": "Maak een virtuele thermostaat aan die een bestaand klimaatapparaat aanstuurt met een externe temperatuursensor.",
+        "data": {
+          "name": "Naam",
+          "target_climate": "Onderliggend klimaatapparaat",
+          "temperature_sensor": "Externe temperatuursensor",
+          "target_temperature": "Gewenste kamertemperatuur",
+          "lower_tolerance": "Ondergrens tolerantie",
+          "upper_tolerance": "Bovengrens tolerantie",
+          "correction_interval_minutes": "Correctie-interval in minuten",
+          "setpoint_step": "Stapgrootte setpoint",
+          "learning_stable_hours": "Aantal stabiele uren voor learning",
+          "apply_to_device": "Onderliggend toestel aansturen",
+          "learning_enabled": "Learning inschakelen",
+          "manual_override_enabled": "Handmatige override detecteren"
+        }
+      },
+      "advanced": {
+        "title": "Geavanceerde instellingen",
+        "description": "Stel extra opties in voor forwarding, learning, stille modus en begrenzingen.",
+        "data": {
+          "manual_override_minutes": "Duur handmatige override in minuten",
+          "learning_resolution": "Resolutie van learning-buckets",
+          "forward_hvac_mode": "HVAC-modus doorsturen",
+          "forward_fan_mode": "Ventilatorstand doorsturen",
+          "forward_swing_mode": "Swingstand doorsturen",
+          "forward_preset_mode": "Presetmodus doorsturen",
+          "use_quiet_switch": "Stille modus-schakelaar gebruiken",
+          "quiet_switch": "Stille modus-schakelaar",
+          "use_custom_limits": "Eigen setpointbegrenzingen gebruiken",
+          "heat_min_setpoint": "Minimum setpoint verwarmen",
+          "heat_max_setpoint": "Maximum setpoint verwarmen",
+          "cool_min_setpoint": "Minimum setpoint koelen",
+          "cool_max_setpoint": "Maximum setpoint koelen"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Basisinstellingen",
+        "description": "Pas de basisinstellingen van deze klimaatproxy aan.",
+        "data": {
+          "name": "Naam",
+          "target_climate": "Onderliggend klimaatapparaat",
+          "temperature_sensor": "Externe temperatuursensor",
+          "target_temperature": "Gewenste kamertemperatuur",
+          "lower_tolerance": "Ondergrens tolerantie",
+          "upper_tolerance": "Bovengrens tolerantie",
+          "correction_interval_minutes": "Correctie-interval in minuten",
+          "setpoint_step": "Stapgrootte setpoint",
+          "learning_stable_hours": "Aantal stabiele uren voor learning",
+          "apply_to_device": "Onderliggend toestel aansturen",
+          "learning_enabled": "Learning inschakelen",
+          "manual_override_enabled": "Handmatige override detecteren"
+        }
+      },
+      "advanced": {
+        "title": "Geavanceerde instellingen",
+        "description": "Pas geavanceerde instellingen van deze klimaatproxy aan.",
+        "data": {
+          "manual_override_minutes": "Duur handmatige override in minuten",
+          "learning_resolution": "Resolutie van learning-buckets",
+          "forward_hvac_mode": "HVAC-modus doorsturen",
+          "forward_fan_mode": "Ventilatorstand doorsturen",
+          "forward_swing_mode": "Swingstand doorsturen",
+          "forward_preset_mode": "Presetmodus doorsturen",
+          "use_quiet_switch": "Stille modus-schakelaar gebruiken",
+          "quiet_switch": "Stille modus-schakelaar",
+          "use_custom_limits": "Eigen setpointbegrenzingen gebruiken",
+          "heat_min_setpoint": "Minimum setpoint verwarmen",
+          "heat_max_setpoint": "Maximum setpoint verwarmen",
+          "cool_min_setpoint": "Minimum setpoint koelen",
+          "cool_max_setpoint": "Maximum setpoint koelen"
+        }
+      }
+    }
+  },
+  "services": {
+    "reset_learning": {
+      "name": "Learning resetten",
+      "description": "Verwijdert de aangeleerde setpoints van één klimaatproxy of van alle klimaatproxy's.",
+      "fields": {
+        "entry_id": {
+          "name": "Configuratie-entry ID",
+          "description": "Optioneel. Laat leeg om learning voor alle klimaatproxy's te resetten."
+        }
+      }
+    }
+  }
+}
